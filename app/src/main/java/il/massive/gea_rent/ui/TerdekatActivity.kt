@@ -1,11 +1,12 @@
-package il.massive.gea_rent
+package il.massive.gea_rent.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import il.massive.gea_rent.R
 
-class MainActivity : AppCompatActivity() {
+class TerdekatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_terdekat)
     }
 }
