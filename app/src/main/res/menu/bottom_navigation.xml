@@ -8,15 +8,21 @@
         android:id="@+id/beranda"
         android:icon="@drawable/home"
         tools:title="Beranda"
-        android:title="" />
+        android:title=""
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"/>
     <item
         android:id="@+id/panduan"
         android:icon="@drawable/paper"
         tools:title="Panduan"
-        android:title="" />
+        android:title=""
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"/>
     <item
-        android:id="@+id/pengaturan"
-        android:icon="@drawable/cog"
-        tools:title="Pengaturan"
-        android:title="" />
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        tools:title="Profile"
+        android:title=""
+        android:textStyle="normal"
+        android:background="?attr/selectableItemBackground"/>
 </menu>
