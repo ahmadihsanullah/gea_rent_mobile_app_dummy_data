@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.DaftarTokoActivity">
+
+    <LinearLayout
+        android:id="@+id/daftartoko"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:id="@+id/backhalaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="110dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/teks_bukatoko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Buka Toko"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_namalengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nama Lengkap"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daftartoko" />
+
+    <EditText
+        android:id="@+id/editnamalengkap"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Nama Lengkap"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/text_namalengkap"
+        app:layout_constraintTop_toBottomOf="@+id/text_namalengkap" />
+
+    <TextView
+        android:id="@+id/namatoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nama Toko"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editnamalengkap"
+        app:layout_constraintTop_toBottomOf="@+id/editnamalengkap" />
+
+    <EditText
+        android:id="@+id/editnamatoko"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Nama Toko yang didaftarkan"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/namatoko"
+        app:layout_constraintTop_toBottomOf="@+id/namatoko" />
+
+    <TextView
+        android:id="@+id/nomorhp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nomor HP"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editnamatoko"
+        app:layout_constraintTop_toBottomOf="@+id/editnamatoko" />
+
+    <EditText
+        android:id="@+id/editnomorhp"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Nomor HP"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/nomorhp"
+        app:layout_constraintTop_toBottomOf="@+id/nomorhp" />
+
+    <TextView
+        android:id="@+id/emailtoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Email"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editnomorhp"
+        app:layout_constraintTop_toBottomOf="@+id/editnomorhp" />
+
+    <EditText
+        android:id="@+id/editemailtoko"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Email Anda"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/emailtoko"
+        app:layout_constraintTop_toBottomOf="@+id/emailtoko" />
+
+    <TextView
+        android:id="@+id/alamattoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Alamat Toko"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editemailtoko"
+        app:layout_constraintTop_toBottomOf="@+id/editemailtoko" />
+
+    <EditText
+        android:id="@+id/editalamattoko"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Alamat Lengkap Toko"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/alamattoko"
+        app:layout_constraintTop_toBottomOf="@+id/alamattoko" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editalamattoko" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
