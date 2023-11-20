@@ -2,8 +2,6 @@ package il.massive.gea_rent.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import il.massive.gea_rent.R
@@ -14,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadFragment(BerandaFragment()).run {
-            title = "Beranda"
+            setTitles("Beranda","","")
         }
 
 
@@ -24,17 +22,17 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.beranda -> {
                     loadFragment(BerandaFragment())
-                    item.setTitle("Beranda")
+                    setTitles("Beranda", "", "")
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.panduan -> {
                     loadFragment(PanduanFragment())
-                    item.setTitle("Panduan")
+                    setTitles("", "Panduan", "")
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.pengaturan -> {
-                    loadFragment(PengaturanFragment())
-                    item.setTitle("Pengaturan")
+                R.id.profile -> {
+                    loadFragment(ProfileFragment())
+                    setTitles("", "", "Profile")
                     return@setOnNavigationItemSelectedListener true
                 }
                 else -> return@setOnNavigationItemSelectedListener false
@@ -46,5 +44,12 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment) // Replace with your fragment container ID
             .commit()
+    }
+    //set title for bottom nav
+    private fun setTitles(berandaTitle: String, panduanTitle: String, profileTitle: String) {
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_nav)
+        bottomNavigationView.menu.findItem(R.id.beranda).setTitle(berandaTitle)
+        bottomNavigationView.menu.findItem(R.id.panduan).setTitle(panduanTitle)
+        bottomNavigationView.menu.findItem(R.id.profile).setTitle(profileTitle)
     }
 }
