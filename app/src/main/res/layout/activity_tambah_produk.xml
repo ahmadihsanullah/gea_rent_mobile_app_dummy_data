@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TambahProdukActivity">
+
+    <LinearLayout
+        android:background="@color/black"
+        android:id="@+id/tambahproduk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:id="@+id/backTokoSaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="88dp"
+            android:background="none"
+            android:src="@drawable/ic_back1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/teks_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Tambah Produk"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_namaproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Nama Produk"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tambahproduk" />
+
+    <EditText
+        android:id="@+id/editnamaproduk"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Nama Produk"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/text_namaproduk"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaproduk" />
+
+    <TextView
+        android:id="@+id/namadeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Deskripsi"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editnamaproduk"
+        app:layout_constraintTop_toBottomOf="@+id/editnamaproduk" />
+
+    <EditText
+        android:id="@+id/editdeskripsi"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Deskripsi"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/namadeskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/namadeskripsi" />
+
+    <TextView
+        android:id="@+id/hargaproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Harga Produk Perhari"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editdeskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/editdeskripsi" />
+
+    <EditText
+        android:id="@+id/editharga"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Harga Produk"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/hargaproduk"
+        app:layout_constraintTop_toBottomOf="@+id/hargaproduk" />
+
+    <TextView
+        android:id="@+id/stokproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Stok"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editharga"
+        app:layout_constraintTop_toBottomOf="@+id/editharga" />
+
+    <EditText
+        android:id="@+id/editstok"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Stok per produk"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/stokproduk"
+        app:layout_constraintTop_toBottomOf="@+id/stokproduk" />
+
+    <TextView
+        android:id="@+id/uploadproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Upload Produk"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editstok"
+        app:layout_constraintTop_toBottomOf="@+id/editstok" />
+
+    <EditText
+        android:id="@+id/editupload"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Upload foto produk"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/uploadproduk"
+        app:layout_constraintTop_toBottomOf="@+id/uploadproduk" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editupload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
