@@ -54,4 +54,7 @@ dependencies {
 
     //glide for image api
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+    //circle image
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }
