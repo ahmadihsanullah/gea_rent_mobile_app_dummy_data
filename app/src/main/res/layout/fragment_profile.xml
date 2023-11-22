@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/seed"
     tools:context=".ui.ProfileFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -77,15 +77,15 @@
             app:layout_constraintStart_toStartOf="@id/bg_profile"
             app:layout_constraintEnd_toEndOf="@id/bg_profile" />
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/tokosaya"-->
-<!--            android:layout_width="320dp"-->
-<!--            android:layout_height="48dp"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:background="@drawable/btn_tokosaya"-->
-<!--            app:layout_constraintTop_toTopOf="@id/detail_profile"-->
-<!--            app:layout_constraintStart_toStartOf="@id/bg_profile"-->
-<!--            app:layout_constraintEnd_toEndOf="@id/bg_profile" />-->
+        <ImageButton
+            android:id="@+id/tokosaya"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btn_tokosaya"
+            app:layout_constraintTop_toTopOf="@id/bukatoko"
+            app:layout_constraintStart_toStartOf="@id/bg_profile"
+            app:layout_constraintEnd_toEndOf="@id/bg_profile" />
 
         <ImageButton
             android:id="@+id/pengaturan"
@@ -93,7 +93,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="60dp"
             android:background="@drawable/btn_pengaturan"
-            app:layout_constraintTop_toTopOf="@id/bukatoko"
+            app:layout_constraintTop_toTopOf="@id/tokosaya"
             app:layout_constraintStart_toStartOf="@id/bg_profile"
             app:layout_constraintEnd_toEndOf="@id/bg_profile" />
 
