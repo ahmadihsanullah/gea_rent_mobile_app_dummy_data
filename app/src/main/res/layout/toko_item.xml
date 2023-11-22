@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/white"
+    app:cardElevation="3dp"
     android:layout_margin="3dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="3dp">
+    app:cardCornerRadius="8dp">
 
     <LinearLayout
+        android:padding="8dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:padding="10dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/card_item"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/item_alat"
+            android:id="@+id/imagealat"
             android:layout_width="100dp"
             android:layout_height="90dp"
             android:layout_gravity="clip_horizontal"
@@ -31,7 +31,7 @@
             android:layout_marginStart="10dp">
 
             <TextView
-                android:id="@+id/judul_alat"
+                android:id="@+id/judulalat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Judul alat"
@@ -57,13 +57,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="60dp"
-            android:layout_marginStart="120dp">
+            android:layout_marginStart="68dp">
 
             <TextView
-                android:id="@+id/hargaperhari"
+                android:id="@+id/hargaalat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Harga "
+                android:hint="Harga"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppinssemibold"
                 android:textSize="12sp">

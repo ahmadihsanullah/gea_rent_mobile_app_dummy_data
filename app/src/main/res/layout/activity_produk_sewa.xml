@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".ui.DaftarTokoActivity">
+    tools:context=".ui.ProdukSewaActivity">
 
     <LinearLayout
-        android:id="@+id/daftartoko"
+        android:background="@color/seed"
+        android:id="@+id/tambahproduksewa"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
@@ -17,157 +17,168 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:contentDescription="Kembali ke halaman sebelumnya"
-            android:id="@+id/backhalaman"
+            android:id="@+id/backTokoSy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="18dp"
-            android:layout_marginEnd="110dp"
-            android:background="@color/white"
-            android:src="@drawable/ic_back"
+            android:layout_marginEnd="100dp"
+            android:background="@color/seed"
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:src="@drawable/ic_back1"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
-            android:id="@+id/teks_bukatoko"
+            android:id="@+id/teks_produk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Buka Toko"
+            android:textColor="@color/white"
+            android:text="Detail Produk"
             android:fontFamily="@font/poppinsbold"
             android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/hapus_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="88dp"
+            android:background="@color/seed"
+            android:contentDescription="Hapus Produk"
+            android:src="@drawable/ic_hapus"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_namalengkap"
+        android:id="@+id/nama_detailproduk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="Nama Lengkap"
+        android:text="Nama Produk"
         android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/daftartoko" />
+        app:layout_constraintTop_toBottomOf="@id/tambahproduksewa" />
 
     <EditText
-        android:id="@+id/editnamalengkap"
+        android:id="@+id/editnama_detailproduk"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edittext"
-        android:hint="Nama Lengkap"
+        android:hint="Nama Produk"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/text_namalengkap"
-        app:layout_constraintTop_toBottomOf="@+id/text_namalengkap" />
+        app:layout_constraintStart_toStartOf="@+id/nama_detailproduk"
+        app:layout_constraintTop_toBottomOf="@+id/nama_detailproduk" />
 
     <TextView
-        android:id="@+id/namatoko"
+        android:id="@+id/deskripsi_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="Nama Toko"
+        android:text="Deskripsi"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editnamalengkap"
-        app:layout_constraintTop_toBottomOf="@+id/editnamalengkap" />
+        app:layout_constraintStart_toStartOf="@+id/editnama_detailproduk"
+        app:layout_constraintTop_toBottomOf="@+id/editnama_detailproduk" />
 
     <EditText
-        android:id="@+id/editnamatoko"
+        android:id="@+id/edit_deskripsidetail"
         android:layout_width="320dp"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edittext"
-        android:hint="Nama Toko yang didaftarkan"
+        android:hint="Deskripsi Produk Anda"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/namatoko"
-        app:layout_constraintTop_toBottomOf="@+id/namatoko" />
+        app:layout_constraintStart_toStartOf="@+id/deskripsi_detail"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_detail" />
 
     <TextView
-        android:id="@+id/nomorhp"
+        android:id="@+id/harga_produksewa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="Nomor HP"
+        android:text="Harga Produk Perhari"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editnamatoko"
-        app:layout_constraintTop_toBottomOf="@+id/editnamatoko" />
+        app:layout_constraintStart_toStartOf="@+id/edit_deskripsidetail"
+        app:layout_constraintTop_toBottomOf="@+id/edit_deskripsidetail" />
 
     <EditText
-        android:id="@+id/editnomorhp"
+        android:id="@+id/editharga_produk"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edittext"
-        android:hint="Nomor HP"
+        android:hint="Harga Produk"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/nomorhp"
-        app:layout_constraintTop_toBottomOf="@+id/nomorhp" />
+        app:layout_constraintStart_toStartOf="@+id/harga_produksewa"
+        app:layout_constraintTop_toBottomOf="@+id/harga_produksewa" />
 
     <TextView
-        android:id="@+id/emailtoko"
+        android:id="@+id/stok_produksewa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="Email"
+        android:text="Stok"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editnomorhp"
-        app:layout_constraintTop_toBottomOf="@+id/editnomorhp" />
+        app:layout_constraintStart_toStartOf="@+id/editharga_produk"
+        app:layout_constraintTop_toBottomOf="@+id/editharga_produk" />
 
     <EditText
-        android:id="@+id/editemailtoko"
+        android:id="@+id/editstok_sewa"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edittext"
-        android:hint="Email Anda"
+        android:hint="Stok per produk"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/emailtoko"
-        app:layout_constraintTop_toBottomOf="@+id/emailtoko" />
+        app:layout_constraintStart_toStartOf="@+id/stok_produksewa"
+        app:layout_constraintTop_toBottomOf="@+id/stok_produksewa" />
 
     <TextView
-        android:id="@+id/alamattoko"
+        android:id="@+id/upload_produksewa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppinssemibold"
-        android:text="Alamat Toko"
+        android:text="Upload Produk"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editemailtoko"
-        app:layout_constraintTop_toBottomOf="@+id/editemailtoko" />
+        app:layout_constraintStart_toStartOf="@+id/editstok_sewa"
+        app:layout_constraintTop_toBottomOf="@+id/editstok_sewa" />
 
-    <EditText
-        android:id="@+id/editalamattoko"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
+    <ImageButton
+        android:id="@+id/editupload_sewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_edittext"
-        android:hint="Alamat Lengkap Toko"
-        android:padding="12dp"
-        android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/alamattoko"
-        app:layout_constraintTop_toBottomOf="@+id/alamattoko" />
+        android:padding="8dp"
+        android:contentDescription="upload"
+        android:src="@drawable/upload_img"
+        app:layout_constraintStart_toStartOf="@+id/upload_produksewa"
+        app:layout_constraintTop_toBottomOf="@+id/upload_produksewa" />
+
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDaftarToko"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Daftar"
+        android:layout_marginTop="40dp"
+        android:text="Update"
+        android:id="@+id/updateproduk"
         android:textColor="@color/white"
         android:background="@drawable/btn_inline"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editalamattoko" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editupload_sewa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

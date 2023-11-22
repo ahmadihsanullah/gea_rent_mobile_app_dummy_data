@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/seed"
     tools:context=".ui.TokoSayaActivity">
 
     <LinearLayout
@@ -23,8 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/black"
-            android:layout_marginStart="18dp"
+            android:backgroundTint="@color/seed"
+            android:layout_marginStart="8dp"
             android:layout_marginEnd="140dp"
             android:src="@drawable/ic_back1"
             tools:ignore="TouchTargetSizeCheck" />
@@ -35,8 +35,8 @@
         android:id="@+id/profilToko"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/fotoprofil"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/menuTokoSaya" />
@@ -44,15 +44,14 @@
     <View
         android:id="@+id/bgtoko"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
-        android:layout_marginTop="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/recylerview"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/judultoko"
@@ -89,12 +88,14 @@
         app:layout_constraintTop_toBottomOf="@+id/judultoko" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/editToko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_outline"
         android:fontFamily="@font/poppinssemibold"
         android:text="Edit"
         android:textSize="14sp"
@@ -105,31 +106,34 @@
         android:id="@+id/judulProduk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="68dp"
-        android:textSize="14sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
         android:fontFamily="@font/poppinssemibold"
         android:text="Produk"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profilToko" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="@+id/judulProduk"
-        app:layout_constraintTop_toBottomOf="@+id/judulProduk" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judulProduk"
+        tools:listitem="@layout/toko_item" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/produksewa_tambah"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:background="none"
+        android:background="@drawable/ic_plus"
         android:contentDescription="Tambah Produk"
-        android:src="@drawable/ic_plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

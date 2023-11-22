@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="image">
+        <item>@drawable/img_item1</item>
+        <item>@drawable/img_item2</item>
+        <item>@drawable/img_item3</item>
+        <item>@drawable/img_item4</item>
+        <item>@drawable/img_item5</item>
+        <item>@drawable/img_item6</item>
+        <item>@drawable/img_item7</item>
+    </integer-array>
+
+    <string-array name="judul">
+        <item>Sepatu Gunung</item>
+        <item>Kompor Portable</item>
+        <item>Kursi Lipat</item>
+        <item>Tenda Dome</item>
+        <item>Sleeping Bag</item>
+        <item>Tas Carrier</item>
+        <item>Terpal</item>
+    </string-array>
+
+    <string-array name="tersedia">
+        <item>Tersedia : 20</item>
+        <item>Tersedia : 15</item>
+        <item>Tersedia : 30</item>
+        <item>Tersedia : 25</item>
+        <item>Tersedia : 20</item>
+        <item>Tersedia : 20</item>
+        <item>Tersedia : 15</item>
+    </string-array>
+
+    <string-array name="harga">
+        <item>30k/24 Jam</item>
+        <item>10k/24 Jam</item>
+        <item>5k/24 Jam</item>
+        <item>30k/24 Jam</item>
+        <item>10k/24 Jam</item>
+        <item>25k/24 Jam</item>
+        <item>20k/24 Jam</item>
+    </string-array>
+</resources>
