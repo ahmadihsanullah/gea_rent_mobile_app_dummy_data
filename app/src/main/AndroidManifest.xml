@@ -23,11 +23,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.TambahProdukActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".ui.Ber" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
         <activity
-            android:name=".ui.TokoSayaActivity"
+            android:name=".ui.ProdukSewaActivity"
             android:exported="false" />
         <activity
             android:name=".ui.DaftarTokoActivity"
@@ -36,7 +34,7 @@
             android:name=".ui.TerdekatActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.TokoSayaActivity"
             android:exported="false" />
         <activity
             android:name=".ui.RegisterActivity"
