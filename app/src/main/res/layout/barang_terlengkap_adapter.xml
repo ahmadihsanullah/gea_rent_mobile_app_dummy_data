@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginEnd="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/iv_barang"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            tools:src="@drawable/produk3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/tv_nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sepatu Gunung"
+            app:layout_constraintTop_toBottomOf="@+id/iv_barang"
+            app:layout_constraintStart_toStartOf="@id/iv_barang"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulishbold"/>
+
+        <TextView
+            android:id="@+id/tv_harga_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_barang"
+            app:layout_constraintStart_toStartOf="@id/tv_nama_barang"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:text="50.000 / hari"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulishregular"/>
+
+        <TextView
+            android:id="@+id/tv_stok_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tv_harga_barang"
+            app:layout_constraintBottom_toBottomOf="@id/tv_harga_barang"
+            app:layout_constraintEnd_toStartOf="@id/tv_jumlah_stok_barang"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="stok: "
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulishregular"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_stok_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tv_harga_barang"
+            app:layout_constraintBottom_toBottomOf="@id/tv_harga_barang"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:text="7"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulishregular"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
