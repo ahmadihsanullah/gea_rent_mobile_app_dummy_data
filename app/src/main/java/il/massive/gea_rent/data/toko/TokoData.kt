@@ -12,13 +12,13 @@ object DataToko {
         ),
         TokoModel(
             R.drawable.toko2,
-            "Green Campus Outdoor",
-            "Jln. Jabaru I No.13"
+            "Pandu Adventure Camp",
+            "Jln. Raya Puncak Gadog Seuseupan"
         ),
         TokoModel(
             R.drawable.toko1,
-            "Green Campus Outdoor",
-            "Jln. Raya Kemang Baru Set"
+            "Bandakala Rental",
+            "Jln. Raya Kemang Baru Setu"
         ),
         TokoModel(
             R.drawable.toko1,

@@ -31,13 +31,16 @@
             android:name=".ui.DaftarTokoActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.TerdekatActivity"
+            android:name=".ui.TokoTerdekatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.TokoSayaActivity"
             android:exported="false" />
         <activity
             android:name=".ui.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreenActivity"

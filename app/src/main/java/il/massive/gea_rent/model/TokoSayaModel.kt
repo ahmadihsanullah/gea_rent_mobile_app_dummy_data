@@ -1,4 +1,4 @@
-package il.massive.gea_rent.ui.model
+package il.massive.gea_rent.model
 
 data class TokoSayaModel(
     val image : Int,

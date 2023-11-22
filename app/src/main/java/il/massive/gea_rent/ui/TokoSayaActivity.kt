@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import il.massive.gea_rent.R
 import il.massive.gea_rent.databinding.ActivityTokoSayaBinding
-import il.massive.gea_rent.ui.adapters.TokoSayaAdapter
-import il.massive.gea_rent.ui.model.TokoSayaModel
+import il.massive.gea_rent.adapter.TokoSayaAdapter
+import il.massive.gea_rent.model.TokoSayaModel
 
 class TokoSayaActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var adapter: TokoSayaAdapter

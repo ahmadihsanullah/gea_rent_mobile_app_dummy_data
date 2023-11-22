@@ -1,4 +1,4 @@
-package il.massive.gea_rent.ui.adapters
+package il.massive.gea_rent.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -7,20 +7,20 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import il.massive.gea_rent.databinding.TokoItemBinding
 import il.massive.gea_rent.ui.ProdukSewaActivity
-import il.massive.gea_rent.ui.model.TokoSayaModel
+import il.massive.gea_rent.model.TokoSayaModel
 
 class TokoSayaAdapter(private val list: List<TokoSayaModel>, private val context:Context) :
     RecyclerView.Adapter<TokoSayaAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: TokoItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TokoSayaAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = TokoItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
     override fun getItemCount(): Int = list.size
 
-    override fun onBindViewHolder(holder: TokoSayaAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder){
             with(list[position]){
                 binding.imagealat.setImageResource(this.image)

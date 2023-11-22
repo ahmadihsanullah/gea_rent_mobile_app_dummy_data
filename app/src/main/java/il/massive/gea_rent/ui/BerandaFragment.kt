@@ -1,12 +1,12 @@
 package il.massive.gea_rent.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import il.massive.gea_rent.R
 import il.massive.gea_rent.adapter.BarangAdapter
 import il.massive.gea_rent.adapter.TokoAdapter
 import il.massive.gea_rent.data.barang.DataBarang
@@ -38,6 +38,10 @@ class BerandaFragment : Fragment() {
         binding.rvBarangTerlengkap.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvBarangTerlengkap.adapter = barangAdapter
 
+        binding.lyBerandaTerdekat.setOnClickListener {
+            startActivity(Intent(requireContext(), TokoTerdekatActivity::class.java))
+        }
+
 
     }
     private val tokoAdapter by lazy {
@@ -51,6 +55,8 @@ class BerandaFragment : Fragment() {
 
         BarangAdapter(items)
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
