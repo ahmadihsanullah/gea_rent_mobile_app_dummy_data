@@ -18,11 +18,11 @@
         app:srcCompat="@drawable/ic_arrow_back" />
 
     <TextView
-        android:id="@+id/tv_terdekat"
+        android:id="@+id/tv_layanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mulishbold"
-        android:text="Terdekat"
+        android:text="Layanan"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/ic_arrow_back"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_toko_terdekat_lihat_semua"
+        android:id="@+id/rv_layanan"
         android:padding="16dp"
         android:background="@drawable/bg_lihat_semua"
         android:layout_width="match_parent"
@@ -43,6 +43,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_terdekat"
-        tools:listitem="@layout/toko_terdekat" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_layanan"
+        tools:listitem="@layout/layanan_toko"
+        tools:itemCount="5"/>
+
+    <Button
+        android:id="@+id/btn_hubungi_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hubungi store"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_inline"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

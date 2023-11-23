@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginVertical="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_produk"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/produk3" />
+
+        <TextView
+            android:id="@+id/nama_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:shadowColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_produk"
+            app:layout_constraintTop_toTopOf="@+id/iv_produk"
+            tools:text="Tas Carrier" />
+
+        <TextView
+            android:id="@+id/judul_jumlah_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Tersedia: "
+            app:layout_constraintStart_toStartOf="@+id/nama_produk"
+            app:layout_constraintTop_toBottomOf="@+id/nama_produk" />
+
+        <TextView
+            android:id="@+id/jumlah_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            app:layout_constraintStart_toEndOf="@+id/judul_jumlah_produk"
+            app:layout_constraintTop_toTopOf="@+id/judul_jumlah_produk"
+            app:layout_constraintBottom_toBottomOf="@+id/judul_jumlah_produk"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
