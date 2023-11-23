@@ -11,7 +11,8 @@ import il.massive.gea_rent.data.toko.DataToko
 import il.massive.gea_rent.model.TokoModel
 
 class TokoAdapter(
-    val tokos: List<TokoModel>
+    val tokos: List<TokoModel>,
+    val listener: onAdapterListener
 ): RecyclerView.Adapter<TokoAdapter.ViewHolder>() {
     class ViewHolder(val view: View):RecyclerView.ViewHolder(view){
         val image = view.findViewById<ImageView>(R.id.iv_toko)
@@ -32,8 +33,14 @@ class TokoAdapter(
         holder.image.setImageResource(toko.image)
         holder.nama.text = toko.nama
         holder.alamat.text = toko.alamat
-//        holder.itemView.setOnClickListener{
-//            listener.onClick(linktree)
-//        }
+        holder.itemView.setOnClickListener{
+            listener.onClick(toko)
+        }
     }
+
+    interface onAdapterListener{
+        fun onClick(result: TokoModel)
+    }
+
+
 }

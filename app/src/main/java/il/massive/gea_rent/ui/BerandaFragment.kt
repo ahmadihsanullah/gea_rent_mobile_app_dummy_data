@@ -6,12 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import il.massive.gea_rent.adapter.BarangAdapter
 import il.massive.gea_rent.adapter.TokoAdapter
 import il.massive.gea_rent.data.barang.DataBarang
 import il.massive.gea_rent.data.toko.DataToko
 import il.massive.gea_rent.databinding.FragmentBerandaBinding
+import il.massive.gea_rent.model.TokoModel
 
 
 class BerandaFragment : Fragment() {
@@ -47,7 +49,15 @@ class BerandaFragment : Fragment() {
     private val tokoAdapter by lazy {
         val items = DataToko.dummyTokoData
 
-        TokoAdapter(items)
+        TokoAdapter(items, object : TokoAdapter.onAdapterListener{
+            override fun onClick(result: TokoModel) {
+                val intent = Intent(requireContext(),DetailTokoActivity::class.java)
+                intent.putExtra("gambar_toko", result.image)
+                intent.putExtra("nama_toko", result.nama)
+                intent.putExtra("alamat_toko", result.alamat)
+                startActivity(intent)
+            }
+        })
     }
 
     private val barangAdapter by lazy {
