@@ -13,6 +13,7 @@ import il.massive.gea_rent.adapter.TokoAdapter
 import il.massive.gea_rent.data.barang.DataBarang
 import il.massive.gea_rent.data.toko.DataToko
 import il.massive.gea_rent.databinding.FragmentBerandaBinding
+import il.massive.gea_rent.model.BarangModel
 import il.massive.gea_rent.model.TokoModel
 
 
@@ -63,7 +64,22 @@ class BerandaFragment : Fragment() {
     private val barangAdapter by lazy {
         val items = DataBarang.dummyDataBarang
 
-        BarangAdapter(items)
+        BarangAdapter(items, object: BarangAdapter.onAdapterListener{
+            override fun onClick(barang: BarangModel) {
+                openDetailBarang(barang)
+            }
+
+        })
+    }
+    private fun openDetailBarang(barang: BarangModel) {
+        val intent = Intent(requireContext(), DetailBarangActivity::class.java)
+        intent.putExtra("gambar_barang", barang.gambar)
+        intent.putExtra("harga_barang", barang.harga)
+        intent.putExtra("nama_barang", barang.nama)
+        intent.putExtra("deskripsi_barang", barang.deskripsi)
+        intent.putExtra("nama_toko", barang.toko.nama)
+        intent.putExtra("profil_toko", barang.toko.image)
+        startActivity(intent)
     }
 
 
@@ -73,3 +89,4 @@ class BerandaFragment : Fragment() {
         _binding = null
     }
 }
+

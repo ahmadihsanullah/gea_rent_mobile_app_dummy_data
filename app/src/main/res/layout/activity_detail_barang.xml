@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailBarangActivity"
+    android:background="@color/seed">
+
+    <ImageView
+        android:id="@+id/ic_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_lihat_semua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/gambar_produk"
+            android:layout_width="318dp"
+            android:layout_height="261dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/produk1" />
+
+        <TextView
+            android:id="@+id/nama_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gambar_produk"
+            tools:text="Sepatu Gunung" />
+
+        <TextView
+            android:id="@+id/deskripsi_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/gambar_produk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gambar_produk"
+            app:layout_constraintTop_toBottomOf="@+id/nama_produk"
+            tools:text="Desain yang modern dengan berbagai ukuran yang tersedia. Cocok untuk berbagai kegiatan outdoor, dari hiking hingga camping." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_produk" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_toko"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_produk"
+            tools:src="@drawable/toko1" />
+
+        <TextView
+            android:id="@+id/nama_toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/poppinssemibold"
+            tools:text="Bandakala Rental"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profil_toko"
+            app:layout_constraintStart_toEndOf="@+id/profil_toko"
+            app:layout_constraintTop_toTopOf="@+id/profil_toko" />
+
+        <ImageView
+            android:id="@+id/alamat_toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/profil_toko"
+            app:layout_constraintTop_toBottomOf="@+id/profil_toko"
+            android:src="@drawable/ic_maps_toko" />
+
+        <Button
+            android:id="@+id/btn_hubungi_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:background="@drawable/btn_inline"
+            android:text="Hubungi store"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

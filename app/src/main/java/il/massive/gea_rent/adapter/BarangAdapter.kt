@@ -7,10 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import il.massive.gea_rent.R
+import il.massive.gea_rent.data.toko.DataToko
 import il.massive.gea_rent.model.BarangModel
+import il.massive.gea_rent.model.TokoModel
 
 class BarangAdapter(
-    val barangs: List<BarangModel>
+    val barangs: List<BarangModel>,
+    val listener: BarangAdapter.onAdapterListener
 ): RecyclerView.Adapter<BarangAdapter.ViewHolder>() {
     class ViewHolder(val view: View):RecyclerView.ViewHolder(view){
         val image = view.findViewById<ImageView>(R.id.iv_barang)
@@ -33,8 +36,12 @@ class BarangAdapter(
         holder.nama.text = barang.nama
         holder.harga.text = barang.harga.toString()
         holder.stok.text = barang.stok.toString()
-//        holder.itemView.setOnClickListener{
-//            listener.onClick(linktree)
-//        }
+        holder.stok.text = barang.stok.toString()
+        holder.itemView.setOnClickListener{
+            listener.onClick(barang)
+        }
+    }
+    interface onAdapterListener{
+        fun onClick(barang: BarangModel)
     }
 }
