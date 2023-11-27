@@ -7,5 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class TokoModel(
     val image: Int,
     val nama: String,
-    val alamat: String
+    val alamat: String,
+    val telpon: String
 ):Parcelable

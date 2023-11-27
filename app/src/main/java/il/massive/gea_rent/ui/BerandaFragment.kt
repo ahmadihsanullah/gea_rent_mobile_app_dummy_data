@@ -56,6 +56,7 @@ class BerandaFragment : Fragment() {
                 intent.putExtra("gambar_toko", result.image)
                 intent.putExtra("nama_toko", result.nama)
                 intent.putExtra("alamat_toko", result.alamat)
+                intent.putExtra("no_telepon", result.telpon)
                 startActivity(intent)
             }
         })

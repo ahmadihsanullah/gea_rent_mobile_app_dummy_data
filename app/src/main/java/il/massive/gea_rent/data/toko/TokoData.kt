@@ -8,32 +8,39 @@ object DataToko {
         TokoModel(
             R.drawable.toko2,
             "Green Campus Outdoor",
-            "Jln. Jabaru I No.13"
+            "Jln. Jabaru I No.13",
+            "628979276362"
         ),
         TokoModel(
             R.drawable.toko2,
             "Pandu Adventure Camp",
-            "Jln. Raya Puncak Gadog Seuseupan"
+            "Jln. Raya Puncak Gadog Seuseupan",
+            "6285882175993"
+
         ),
         TokoModel(
             R.drawable.toko1,
             "Bandakala Rental",
-            "Jln. Raya Kemang Baru Setu"
+            "Jln. Raya Kemang Baru Setu",
+            "628979276362"
         ),
         TokoModel(
             R.drawable.toko1,
             "Green Campus Outdoor",
-            "Jln. Raya Kemang Baru Set"
+            "Jln. Raya Kemang Baru Set",
+            "6285882175993"
         ),
         TokoModel(
             R.drawable.toko2,
             "Green Campus Outdoor",
-            "Jln. Jabaru I No.13"
+            "Jln. Jabaru I No.13",
+            "6285882175993"
         ),
         TokoModel(
             R.drawable.toko2,
             "Green Campus Outdoor",
-            "Jln. Jabaru I No.13"
+            "Jln. Jabaru I No.13",
+            "6285882175993"
         ),
     )
 }

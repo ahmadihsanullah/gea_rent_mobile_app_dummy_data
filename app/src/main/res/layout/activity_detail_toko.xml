@@ -25,15 +25,16 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:srcCompat="@drawable/ic_arrow_back"
+        android:background="@drawable/bg_arrow_back"/>
 
     <LinearLayout
         android:id="@+id/ly_detail_toko"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="-40dp"
         android:background="@drawable/bg_lihat_semua"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_foto_toko">
@@ -42,8 +43,8 @@
             android:id="@+id/tv_nama_toko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinssemibold"
             android:textSize="20dp"
             tools:text="Bandakala Rental" />
@@ -69,9 +70,9 @@
 
         <LinearLayout
             android:id="@+id/ly_alamat_toko"
-            android:layout_marginHorizontal="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
@@ -89,36 +90,66 @@
                 tools:text="Jl. Raya Kemang Baru Setu, Tonjong, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tv_layanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/mulishregular"
+            android:textSize="15sp"
+            android:text="Layanan" />
+
     </LinearLayout>
-   <com.google.android.material.tabs.TabLayout
-       android:id="@+id/tab_layout"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       tools:ignore="MissingConstraints"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       android:background="@color/white"
-       app:layout_constraintTop_toBottomOf="@+id/ly_detail_toko">
-       <com.google.android.material.tabs.TabItem
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Review"
-           />
 
-       <com.google.android.material.tabs.TabItem
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Layanan"
-           />
-   </com.google.android.material.tabs.TabLayout>
 
-    <ImageView
-        android:id="@+id/iv_reviews"
-        android:layout_width="342dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/reviews"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_produk_toko"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/ly_hubungi_store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/ly_detail_toko"
+        app:layout_constraintVertical_bias="0.0"
+        tools:itemCount="2"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:spanCount="2"
+        tools:listitem="@layout/layanan_toko" />
+
+    <LinearLayout
+        android:id="@+id/ly_hubungi_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_lihat_semua"
+        >
+
+        <Button
+            android:id="@+id/btn_hubungi_store"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Hubungi Store"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,20 @@
 package il.massive.gea_rent.ui
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import il.massive.gea_rent.R
+import il.massive.gea_rent.adapter.LayananAdapter
+import il.massive.gea_rent.data.barang.DataBarang
 import il.massive.gea_rent.databinding.ActivityDetailTokoBinding
 import il.massive.gea_rent.databinding.ActivityTokoTerdekatBinding
+import il.massive.gea_rent.model.BarangModel
 
 class DetailTokoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailTokoBinding
@@ -21,34 +28,52 @@ class DetailTokoActivity : AppCompatActivity() {
         val nama = intent.getStringExtra("nama_toko")
         val alamat = intent.getStringExtra("alamat_toko")
 
+
         binding.ivFotoToko.setImageResource(gambar)
         binding.tvNamaToko.text = nama
         binding.tvAlamatToko.text = alamat
 
-        // Menangani perpindahan antar tab
-        binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                val position = tab?.position ?: 0
-
-                when (position) {
-                    0 -> {
-                        // Jika tab Review dipilih, tampilkan gambar Reviews
-                        binding.ivReviews.setImageResource(R.drawable.reviews)
-                    }
-                    1 -> {
-                        // Jika tab Layanan dipilih, buka aktivitas LayananActivity
-                        startActivity(Intent(this@DetailTokoActivity, LayananActivity::class.java))
-                        finish()
-                    }
-                }
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {}
-            override fun onTabReselected(tab: TabLayout.Tab?) {}
-            })
-
         binding.arrowBack.setOnClickListener {
             finish()
         }
+        setUpRecyclerView()
+        hubungiStore()
+    }
+    private fun setUpRecyclerView(){
+        val items = DataBarang.dummyDataBarang
+
+        var barangAdapter = LayananAdapter(items, object: LayananAdapter.onAdapterListener{
+            override fun onClick(barang: BarangModel) {
+                val intent = Intent(this@DetailTokoActivity, DetailBarangActivity::class.java)
+                intent.putExtra("gambar_barang", barang.gambar)
+                intent.putExtra("harga_barang", barang.harga)
+                intent.putExtra("nama_barang", barang.nama)
+                intent.putExtra("deskripsi_barang", barang.deskripsi)
+                intent.putExtra("nama_toko", barang.toko.nama)
+                intent.putExtra("profil_toko", barang.toko.image)
+                startActivity(intent)
+            }
+        })
+        binding.rvProdukToko.apply {
+            layoutManager = GridLayoutManager(this@DetailTokoActivity,2)
+            adapter = barangAdapter
         }
+
+    }
+
+    private fun hubungiStore(){
+        val telpon = intent.getStringExtra("no_telepon").toString()
+        val nomorWhatsApp = telpon
+
+        binding.btnHubungiStore.setOnClickListener {
+            // Ganti nomor ini dengan nomor WhatsApp toko yang sesuai
+
+            val pesanWhatsApp = "Saya tertarik dengan produk yang berada di toko anda"
+            val url = "https://api.whatsapp.com/send?phone=$nomorWhatsApp&text=${Uri.encode(pesanWhatsApp)}"
+
+            // Buka WhatsApp dengan Intent
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(intent)
+        }
+    }
 }
