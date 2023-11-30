@@ -19,6 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <TextView
             android:id="@+id/tv_daftar"
             android:layout_width="wrap_content"
@@ -28,53 +29,105 @@
             android:layout_marginTop="123dp"
             android:textSize="36sp" />
 
-        <EditText
-            android:id="@+id/et_fullname"
+        <!-- Username -->
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="20dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="Full name"
-            android:layout_marginTop="40dp"
-            android:textSize="14sp"
-            android:background="@drawable/button_shape"
-            />
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="#AAAAAA"
+            app:startIconContentDescription="Username Icon"
+            app:startIconDrawable="@drawable/ic_account_box_24"
+            app:endIconMode="clear_text"
+            >
 
-        <EditText
-            android:id="@+id/et_email"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                app:endIconMode="@drawable/ic_lock"
+                android:textColorHint="@color/seed"
+                android:background="@drawable/button_shape"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="Email"
-            android:layout_marginTop="20dp"
-            android:textSize="14sp"
-            android:background="@drawable/button_shape"
-            android:paddingLeft="20dp"/>
+            android:layout_height="wrap_content"
+            android:hint="Name "
+            android:textColorHint="#AAAAAA"
+            app:startIconContentDescription="Username Icon"
+            app:startIconDrawable="@drawable/ic_email_24"
+            app:endIconMode="clear_text"
+            >
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                app:endIconMode="@drawable/ic_lock"
+                android:textColorHint="@color/seed"
+                android:background="@drawable/button_shape"
+                />
 
-        <EditText
-            android:id="@+id/et_password"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="Masukan Password"
-            android:textSize="14sp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_shape"
-            android:paddingLeft="20dp"
-            />
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#AAAAAA"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconContentDescription="lock"
+            app:endIconMode="password_toggle"
 
-        <EditText
-            android:id="@+id/et_confirm_password"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:endIconMode="@drawable/ic_lock"
+                android:background="@drawable/button_shape"
+                android:textColorHint="@color/seed"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Confirm Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:fontFamily="@font/poppinsregular"
+            android:layout_height="wrap_content"
             android:hint="Konfirmasi Password"
-            android:textSize="14sp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_shape"
-            android:paddingLeft="20dp"
-            />
+            android:textColorHint="#AAAAAA"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconContentDescription="lock"
+            app:endIconMode="password_toggle"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:endIconMode="@drawable/ic_lock"
+                android:background="@drawable/button_shape"
+                android:textColorHint="@color/seed"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -115,6 +168,7 @@
     </LinearLayout>
 
     <Button
+        style="@style/Widget.Material3.Button"
         android:id="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,5 +179,7 @@
         android:fontFamily="@font/poppinssemibold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

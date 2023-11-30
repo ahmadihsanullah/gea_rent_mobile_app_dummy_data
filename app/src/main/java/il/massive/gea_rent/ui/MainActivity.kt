@@ -5,20 +5,20 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import il.massive.gea_rent.R
+import il.massive.gea_rent.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         loadFragment(BerandaFragment()).run {
             setTitles("Beranda","","")
         }
 
-
-
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_nav)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        binding.bottomNav.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.beranda -> {
                     loadFragment(BerandaFragment())
