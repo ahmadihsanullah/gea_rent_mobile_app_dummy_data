@@ -13,12 +13,6 @@
         android:theme="@style/Theme.Gea_rent_app"
         tools:targetApi="31">
         <activity
-            android:name=".ui.DetailProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.DetailPanduanActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.DetailBarangActivity"
             android:exported="false" />
         <activity
