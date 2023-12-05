@@ -25,7 +25,6 @@ class ProfileFragment : Fragment() {
         // Find the button by ID
         val btnbukatoko: ImageButton = view.findViewById(R.id.bukatoko)
         val btntokosaya: ImageButton = view.findViewById(R.id.tokosaya)
-        val btndetailprofil: ImageButton = view.findViewById(R.id.detail_profile)
 
         // Set an OnClickListener for the button
         btnbukatoko.setOnClickListener {
@@ -35,11 +34,6 @@ class ProfileFragment : Fragment() {
 
         btntokosaya.setOnClickListener {
             val intent = Intent(activity, TokoSayaActivity::class.java)
-            startActivity(intent)
-        }
-
-        btndetailprofil.setOnClickListener {
-            val intent = Intent(activity, DetailProfileActivity::class.java)
             startActivity(intent)
         }
 
