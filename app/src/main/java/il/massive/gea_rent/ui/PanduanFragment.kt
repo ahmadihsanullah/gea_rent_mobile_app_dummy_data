@@ -1,4 +1,4 @@
-package il.massive.gea_rent.views.panduan
+package il.massive.gea_rent.ui.panduan
 
 import android.content.Intent
 import android.os.Bundle
