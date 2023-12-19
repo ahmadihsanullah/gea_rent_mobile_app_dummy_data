@@ -6,7 +6,7 @@ import il.massive.gea_rent.model.TokoModel
 object DataToko {
     val dummyTokoData = listOf<TokoModel>(
         TokoModel(
-            R.drawable.toko2,
+            R.drawable.toko1,
             "Green Campus Outdoor",
             "Jln. Jabaru I No.13",
             "628979276362"
@@ -14,32 +14,32 @@ object DataToko {
         TokoModel(
             R.drawable.toko2,
             "Pandu Adventure Camp",
-            "Jln. Raya Puncak Gadog Seuseupan",
+            "Jln. Raya Puncak Bogor",
             "6285882175993"
 
         ),
         TokoModel(
-            R.drawable.toko1,
+            R.drawable.toko3,
             "Bandakala Rental",
-            "Jln. Raya Kemang Baru Setu",
+            "Jln. Raya Kemang Baru",
             "628979276362"
         ),
         TokoModel(
-            R.drawable.toko1,
+            R.drawable.toko4,
             "Green Campus Outdoor",
-            "Jln. Raya Kemang Baru Set",
+            "Jln. Raya Dago, Bandung",
             "6285882175993"
         ),
         TokoModel(
-            R.drawable.toko2,
+            R.drawable.toko5,
             "Green Campus Outdoor",
-            "Jln. Jabaru I No.13",
+            "Jln. Puspitek, Gunung Sindur",
             "6285882175993"
         ),
         TokoModel(
-            R.drawable.toko2,
+            R.drawable.toko6,
             "Green Campus Outdoor",
-            "Jln. Jabaru I No.13",
+            "Jln. Raya Parungpanjang",
             "6285882175993"
         ),
     )
