@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import il.massive.gea_rent.R
 import il.massive.gea_rent.databinding.ActivityMainBinding
+import il.massive.gea_rent.views.panduan.PanduanFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

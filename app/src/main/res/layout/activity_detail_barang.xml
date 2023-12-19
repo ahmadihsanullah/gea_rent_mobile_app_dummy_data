@@ -122,6 +122,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/skor_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_produk"
+            app:layout_constraintEnd_toEndOf="@+id/gambar_produk"
+            app:layout_constraintTop_toTopOf="@+id/nama_produk"
+            app:srcCompat="@drawable/bintang_toko" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
