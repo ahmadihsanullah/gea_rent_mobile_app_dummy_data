@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.PanduanTendaActivity">
+
+    <ImageButton
+        android:id="@+id/back_panduan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="back"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_panduan2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judul_alat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Panduan Mendirikan Tenda Dome"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageTenda"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda0"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/judul_alat2" />
+
+            <TextView
+                android:id="@+id/desc_tenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_tenda"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda" />
+
+            <TextView
+                android:id="@+id/panduantenda1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_tenda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_tenda"/>
+
+            <ImageView
+                android:id="@+id/imageTenda2"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tenda1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduantenda1" />
+
+            <ImageView
+                android:id="@+id/imageTenda3"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tenda2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda2" />
+
+            <TextView
+                android:id="@+id/panduantenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_tenda2"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda3"/>
+
+            <ImageView
+                android:id="@+id/imageTenda4"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda3"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduantenda2"/>
+
+            <ImageView
+                android:id="@+id/imageTenda5"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda4"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda4"/>
+
+            <ImageView
+                android:id="@+id/imageTenda6"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda5"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda5"/>
+
+            <TextView
+                android:id="@+id/panduantenda3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_tenda3"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda6"/>
+
+            <ImageView
+                android:id="@+id/imageTenda7"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda6"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduantenda3"/>
+
+            <ImageView
+                android:id="@+id/imageTenda8"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda7"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda7"/>
+
+            <TextView
+                android:id="@+id/panduantenda4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_tenda4"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda8"/>
+
+            <ImageView
+                android:id="@+id/imageTenda9"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda8"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduantenda4"/>
+
+            <ImageView
+                android:id="@+id/imageTenda10"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda9"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda9"/>
+
+            <TextView
+                android:id="@+id/panduantenda5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/panduan_tenda5"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda10" />
+
+            <ImageView
+                android:id="@+id/imageTenda11"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/tenda10"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduantenda5"/>
+
+            <TextView
+                android:id="@+id/tendareferensi"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="Referensi : https://youtu.be/eR8EpwTOfNc?si=0nFdpohLTA78cxuj"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageTenda11"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tendareferensi"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

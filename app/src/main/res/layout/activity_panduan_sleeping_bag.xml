@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.PanduanSleepingBagActivity">
+
+    <ImageButton
+        android:id="@+id/back_panduan3"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="back"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_panduan3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judul_alat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Panduan Penggunaan Sleeping Bag yang Benar"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageSleeping"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/sleeping_bag"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/judul_alat3" />
+
+            <TextView
+                android:id="@+id/desc_tenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_sleeping"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageSleeping" />
+
+            <TextView
+                android:id="@+id/panduansleep1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_sleeping"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_tenda"/>
+
+            <TextView
+                android:id="@+id/panduansleep2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_sleeping2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduansleep1"/>
+
+            <TextView
+                android:id="@+id/panduansleep3"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_sleeping3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduansleep2"/>
+
+            <TextView
+                android:id="@+id/panduansleep4"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_sleeping4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduansleep3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduansleep4"/>
+
+            <TextView
+                android:id="@+id/sleepreferensi"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="Referensi : https://torch.id/blogs/news-and-updates/cara-memakai-sleeping-bag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduansleep4"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sleepreferensi"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.PanduanWaterActivity">
+
+    <ImageButton
+        android:id="@+id/back_panduan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="back"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_panduan4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judul_alat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Panduan Memakai Water Bladder dengan Hydropack"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageWater"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/judul_alat4" />
+
+            <TextView
+                android:id="@+id/desc_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_water"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater" />
+
+            <TextView
+                android:id="@+id/panduanwater1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_water"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_water"/>
+
+            <ImageView
+                android:id="@+id/imageWater2"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water1"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduanwater1"/>
+
+            <ImageView
+                android:id="@+id/imageWater3"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater2"/>
+
+            <TextView
+                android:id="@+id/panduanwater2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_water2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater3"/>
+
+            <ImageView
+                android:id="@+id/imageWater4"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water3"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduanwater2"/>
+
+            <ImageView
+                android:id="@+id/imageWater5"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water4"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater4"/>
+
+            <TextView
+                android:id="@+id/panduanwater3"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="@string/panduan_water3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater5"/>
+
+            <ImageView
+                android:id="@+id/imageWater6"
+                android:layout_width="360dp"
+                android:layout_height="220dp"
+                android:src="@drawable/water5"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/panduanwater3"/>
+
+            <TextView
+                android:id="@+id/waterreferensi"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="referensi : https://youtu.be/zcQxoM3gRcw?si=_e_QLNHqksnkJmUJ"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageWater6"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/waterreferensi"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

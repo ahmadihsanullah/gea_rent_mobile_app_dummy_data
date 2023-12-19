@@ -1,7 +1,38 @@
 <resources>
     <string name="app_name">gea_rent_app</string>
     <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="daftar">Daftar</string>
-    <string name="sapaan">Halo, Irma</string>
+    <string name="sapaan">Halo, %1$s</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="mau_sewa_alat_outdoor">Mau sewa alat Outdoor ?</string>
+    <string name="terdekat">Terdekat</string>
+    <string name="barang_terlengkap">Barang Terlengkap</string>
+    <string name="text_kompor">Penggunaan kompor portable sangat memudahkan kita yang sering melakukan kegiatan outdoor, berikut ini adalah cara menggunakan kompor portable :</string>
+    <string name="panduan_kompor">1. Buka katup tabung lalu pasang gas sesuai dengan moncong tabung dengan bagian dalam kenop gas.</string>
+    <string name="panduan_kompor2">2. kunci tabung gas dengan menekan tuas yang terletak di samping kenop gas. Lalu tutup katup gas.</string>
+    <string name="panduan_kompor3">3. Nyalakan Kompor Gas Portable seperti kompor biasanya dengan atur intesitas api sesuai kebutuhan.</string>
+    <string name="text_tenda">Penggunaan tenda dome sangat membantu kita berlindung di malam hari dan beraktivitas pada kegiatan outdoor, berikut ini adalah cara merakit tenda dome :</string>
+    <string name="panduan_tenda">1. Menyiapkan peralatan tenda dan mencari permukaan yang datar</string>
+    <string name="panduan_tenda2">2. Sambungkan frame rangka tenda berbentuk besi lalu dipasang menyilang dan memasukkan rangka besi yang tegak ke lubang di ujung inner tenda</string>
+    <string name="panduan_tenda3">3. Kemudian tali bagian ujung tengah inner tenda pada persilangan kedua frame lalu pasangkan ujung setiap frame dengan pin</string>
+    <string name="panduan_tenda4">4. Pasagkan flysheet memasang flysheet diatas inner tenda, lalu Kaitkan semua ujung flysheet dengan tali dan pasak</string>
+    <string name="panduan_tenda5">5. Tenda berhasil berdiri dan siap digunakan</string>
+    <string name="text_sleeping">Ada beberapa tahapan cara memakai sleeping bag dengan benar, supaya tubuh kamu tetap merasa hangat dan terhindar dari kondisi hipotermia. Berikut ini beberapa cara memakai sleeping bag dengan tepat ketika hiking.</string>
+    <string name="panduan_sleeping">1. Memakai alas tidur seperti matras yang memiliki fungsi sebagai penghangat tubuh saat tidur.</string>
+    <string name="panduan_sleeping2">2. Mengenakan pakaian kering agar terhindar dari kedinginan.</string>
+    <string name="panduan_sleeping3">3. Mengenakan kaos kaki, kaos tangan, jaket dan kupluk.</string>
+    <string name="panduan_sleeping4">4. Menjaga sleeping bag tetap kering agar menjaga suhu panas dalam tubuh.</string>
+    <string name="text_water">Berikut ini beberapa panduan memakai water bladder dengan menggunakan tas hydropack.</string>
+    <string name="panduan_water">1. Untuk memasukkan water bladder terletak bagian belakang lalu dimasukkan ke dalamnya dan memasukkan lubang selang wb di kedua straps.</string>
+    <string name="panduan_water2">2. Pastikan pangkal selang berada dibawah, bagian yang menonjol dari water bladder menghadap ke (depan bukan ke punggung)</string>
+    <string name="panduan_water3">3. Terdapat webbing di kedua straps yang berguna untuk holder selang, siap dipakai.</string>
+    <string name="text_kompas">Berikut adalah cara menggunakan kompas sebagai penunjuk arah, dikutip dari laman wikihow.com</string>
+    <string name="panduan_kompas">1. Memastikan jarum kompas bergerak dengan bebas, tidak ada kerusakan pada kaca atau bingkai kompas, dan tidak ada gangguan magnet di sekitarnya.</string>
+    <string name="panduan_kompas2">2. Menentukan arah utara terlebih dahulu, dengan berbagai cara seperti menggunakan matahari atau bintang pada waktu tertentu, atau menggunakan peta yang sudah memiliki informasi arah utara.</string>
+    <string name="panduan_kompas3">3. Pegang kompas dengan tangan kanan dan letakkan jari telunjuk di sekitar bingkai kompas.</string>
+    <string name="panduan_kompas4">4. Tentukan arah tujuan yang ingin dituju</string>
+    <string name="panduan_kompas5">5. Baca angka pada skala arah yang berada di bawah jarum kompas.</string>
+    <string name="panduan_kompas6">6. Menempuh perjalanan.</string>
 </resources>

@@ -18,6 +18,11 @@ import il.massive.gea_rent.databinding.FragmentPanduanBinding
 import il.massive.gea_rent.model.BarangModel
 import il.massive.gea_rent.model.PanduanModel
 import il.massive.gea_rent.ui.DetailPanduanActivity
+import il.massive.gea_rent.ui.PanduanKompasActivity
+import il.massive.gea_rent.ui.PanduanKomporActivity
+import il.massive.gea_rent.ui.PanduanSleepingBagActivity
+import il.massive.gea_rent.ui.PanduanTendaActivity
+import il.massive.gea_rent.ui.PanduanWaterActivity
 
 class PanduanFragment : Fragment() {
     private var _binding: FragmentPanduanBinding? = null
@@ -47,8 +52,21 @@ class PanduanFragment : Fragment() {
 
         PanduanAdapter(items, object: PanduanAdapter.onAdapterListener{
             override fun onClick(panduan: PanduanModel) {
-                openDetailPanduan(panduan)
-//                Toast.makeText("Halo", this@PanduanFragment, Toast.LENGTH_SHORT).show()
+                if (panduan.judul=="Panduan Penggunaan Kompor Portable"){
+                    startActivity(Intent(requireContext(),PanduanKomporActivity::class.java))
+                }
+                if (panduan.judul=="Panduan Mendirikan Tenda Dome"){
+                    startActivity(Intent(requireContext(),PanduanTendaActivity::class.java))
+                }
+                if (panduan.judul=="Panduan Penggunaan Sleeping Bag yang Benar"){
+                    startActivity(Intent(requireContext(), PanduanSleepingBagActivity::class.java))
+                }
+                if (panduan.judul=="Panduan Memakai Water Bladder dengan Hydropack"){
+                    startActivity(Intent(requireContext(), PanduanWaterActivity::class.java))
+                }
+                if (panduan.judul=="Panduan Penggunaan Kompas yang Benar"){
+                    startActivity(Intent(requireContext(), PanduanKompasActivity::class.java))
+                }
             }
 
         })
