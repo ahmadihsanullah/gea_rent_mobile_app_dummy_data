@@ -13,6 +13,7 @@ object DataBarang {
             80000,
             2,
             R.drawable.sepatu,
+            R.drawable.skor_barang1
         ),
         BarangModel(
             DataToko.dummyTokoData[1],
@@ -21,6 +22,7 @@ object DataBarang {
             50000,
             7,
             R.drawable.produk2,
+            R.drawable.skor_barang_2
         ),
         BarangModel(
             DataToko.dummyTokoData[2],
@@ -29,6 +31,7 @@ object DataBarang {
             80000,
             2,
             R.drawable.terpal,
+            R.drawable.skor_barang1
         ),
         BarangModel(
             DataToko.dummyTokoData[3],
@@ -37,6 +40,7 @@ object DataBarang {
             50000,
             7,
             R.drawable.tenda_dome,
+            R.drawable.skor_barang_2
         ),
         BarangModel(
             DataToko.dummyTokoData[4],
@@ -45,6 +49,7 @@ object DataBarang {
             80000,
             2,
             R.drawable.sleeping_bad,
+            R.drawable.skor_barang1
         ),
         BarangModel(
             DataToko.dummyTokoData[5],
@@ -53,6 +58,7 @@ object DataBarang {
             50000,
             7,
             R.drawable.produk2,
+            R.drawable.skor_barang_2
         ),
         BarangModel(
             DataToko.dummyTokoData[3],
@@ -61,6 +67,7 @@ object DataBarang {
             80000,
             2,
             R.drawable.sepatu,
+            R.drawable.skor_barang1
         ),
         BarangModel(
             DataToko.dummyTokoData[2],
@@ -69,6 +76,7 @@ object DataBarang {
             50000,
             7,
             R.drawable.produk2,
+            R.drawable.skor_barang_2
         ),
 
     )

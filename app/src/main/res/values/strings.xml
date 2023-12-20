@@ -4,7 +4,7 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="daftar">Daftar</string>
-    <string name="sapaan">Halo, %1$s</string>
+    <string name="sapaan">Halo, Irma</string>
     <string name="lihat_semua">Lihat Semua</string>
     <string name="mau_sewa_alat_outdoor">Mau sewa alat Outdoor ?</string>
     <string name="terdekat">Terdekat</string>
@@ -35,4 +35,6 @@
     <string name="panduan_kompas4">4. Tentukan arah tujuan yang ingin dituju</string>
     <string name="panduan_kompas5">5. Baca angka pada skala arah yang berada di bawah jarum kompas.</string>
     <string name="panduan_kompas6">6. Menempuh perjalanan.</string>
+    <string name="toko_terdekat">Toko Terdekat</string>
+
 </resources>

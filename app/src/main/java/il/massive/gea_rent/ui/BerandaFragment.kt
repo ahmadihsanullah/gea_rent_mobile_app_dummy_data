@@ -80,6 +80,7 @@ class BerandaFragment : Fragment() {
         intent.putExtra("deskripsi_barang", barang.deskripsi)
         intent.putExtra("nama_toko", barang.toko.nama)
         intent.putExtra("profil_toko", barang.toko.image)
+        intent.putExtra("skor_barang", barang.skor)
         startActivity(intent)
     }
 
