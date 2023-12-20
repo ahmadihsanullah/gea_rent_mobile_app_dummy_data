@@ -20,12 +20,11 @@ class DaftarTokoActivity : AppCompatActivity(), View.OnClickListener   {
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btnDaftarToko-> {
-                val intent = Intent(this@DaftarTokoActivity, MainActivity::class.java)
+                val intent = Intent(this@DaftarTokoActivity, TokoSayaActivity::class.java)
                 startActivity(intent)
             }
             R.id.backhalaman-> {
-                val intent = Intent(this@DaftarTokoActivity, MainActivity::class.java)
-                startActivity(intent)
+                finish()
             }
         }
     }
