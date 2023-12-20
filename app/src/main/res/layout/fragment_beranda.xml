@@ -77,7 +77,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terdekat"
+        android:text="@string/toko_terdekat"
         android:fontFamily="@font/mulishbold"
         android:textSize="12sp"
         android:paddingStart="16dp"
@@ -134,7 +134,7 @@
         android:id="@+id/tv_barang_terlengkap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Barang Terlengkap"
+        android:text="@string/barang_terlengkap"
         android:fontFamily="@font/mulishbold"
         android:textSize="12sp"
         android:paddingStart="16dp"

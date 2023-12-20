@@ -17,12 +17,14 @@ class DetailBarangActivity : AppCompatActivity() {
         val deskripsi_produk = intent.getStringExtra("deskripsi_barang")
         val nama_toko = intent.getStringExtra("nama_toko")
         val profil_toko = intent.getIntExtra("profil_toko",0)
+        val skor_barang = intent.getIntExtra("skor_barang",0)
 
         binding.gambarProduk.setImageResource(gambar_barang)
         binding.namaProduk.text = nama_barang
         binding.deskripsiProduk.text = deskripsi_produk
         binding.namaToko.text = nama_toko
         binding.profilToko.setImageResource(profil_toko)
+        binding.skorBarang.setImageResource(skor_barang)
 
         binding.icArrowBack.setOnClickListener {
             finish()

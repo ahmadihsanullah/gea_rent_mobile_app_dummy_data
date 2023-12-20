@@ -6,5 +6,6 @@ data class BarangModel(
     val deskripsi: String,
     val harga: Int,
     val stok: Int,
-    val gambar: Int
+    val gambar: Int,
+    val skor: Int
 )
