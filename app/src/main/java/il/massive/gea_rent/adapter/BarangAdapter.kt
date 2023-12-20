@@ -34,7 +34,7 @@ class BarangAdapter(
         val barang = barangs[position]
         holder.image.setImageResource(barang.gambar)
         holder.nama.text = barang.nama
-        holder.harga.text = barang.harga.toString()
+        holder.harga.text = barang.harga.toString().plus(" /hari")
         holder.stok.text = barang.stok.toString()
         holder.stok.text = barang.stok.toString()
         holder.itemView.setOnClickListener{
