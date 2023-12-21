@@ -53,7 +53,7 @@
                 android:id="@+id/tv_stok_barang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tersedia:"
+                android:text="Stok:"
                 android:layout_marginStart="30dp"/>
 
             <TextView

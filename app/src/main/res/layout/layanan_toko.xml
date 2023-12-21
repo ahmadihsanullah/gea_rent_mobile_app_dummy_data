@@ -16,8 +16,8 @@
       android:padding="16dp">
       <ImageView
           android:id="@+id/iv_produk"
-          android:layout_width="160dp"
-          android:layout_height="160dp"
+          android:layout_width="140dp"
+          android:layout_height="150dp"
           tools:src="@drawable/produk3" />
 
       <TextView
